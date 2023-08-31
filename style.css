@@ -1,0 +1,1066 @@
+*{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*HEADER*/
+header{
+    margin:10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    align-items: center;
+}
+
+.main-menu img{
+    width:160px;
+}
+
+a{
+    color: black;
+}
+
+nav a{
+    display: block;
+}
+.topmenu{
+    display: flex;
+    gap:30px;
+}
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+.active:after, .submenu-link:after {
+    content: "\f107";
+}
+.submenu {
+    position: absolute;
+    left: -1px;
+    z-index: 5;
+    width: 240px;
+    visibility: hidden;
+    opacity: 0;  
+    transform: translateY(10px);
+    transition: .3s ease-in-out;
+}
+.submenu li{
+    position: relative;
+    font-size: 12pt;
+}
+.submenu a{
+    color: black;
+    text-align: left;
+    padding: 10px 20px;
+    background-color: #ffffff;
+  }
+
+nav li:hover > .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.main-menu nav a{
+    text-decoration: none;
+}
+.main-menu nav  a:after {
+    display: block;
+    content: ""; 
+    height: 2px;
+    width: 0%;
+    background-color: #0077FF;
+    margin-top: 3px;
+    transition: width 0.4s ease-in-out;
+    }
+.main-menu nav a:hover:after, a:focus:after {
+    width: 100%;
+}
+
+input[type=button]{
+    background-color: transparent;
+    outline: none;
+    border:2px solid #0077FF;
+    font-size: 12pt;
+    padding:15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+input[type=button]:hover{
+    background-color: #0077FF;
+    color: white;
+    transition: 0.5s;
+    transform: 3;
+}
+/*END OF HEADER*/
+
+
+/*PART OF HEADER IN INDEX.HTML*/
+.main{
+    display: flex;
+    gap:150px;
+}
+
+.main img:hover{
+    transform: translate3d(20px,10px,30px);
+    transition: 1.5s;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+}
+
+.main input[type=button]{
+    background-color: #0077FF;
+    outline: none;
+    border:2px solid #0077FF;
+    font-size: 12pt;
+    padding:15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+.main input[type=button]:hover{
+    background-color: black;
+    border:2px solid black;
+    color: white;
+    transition: 0.7s;
+    transform: 3;
+}
+/*END*/
+
+
+hr{
+    color: #0077FF;
+    border:2px solid #0077FF;
+    width:200px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+section{
+    margin:15%;
+}
+
+
+/*ADVANTAGES IN INDEX.HTML*/
+.advantages{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.advantage{
+    height:autos;
+    width:30%;
+    background-color: #0077FF;
+    padding: 3%;
+    border-radius: 10px;
+    color:white;
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantage img{
+    height:100px;
+    width:100px;
+}
+
+.advantage h3{
+    text-align: center;
+}
+/**/
+
+
+/*WHY ARE WE IN INDEX.HTML*/
+.why-are-we{
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.why-are-we h1{
+    font-size:28pt;
+}
+
+.lists{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extra{
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    gap:40px;
+    flex-direction: column;
+}
+
+.list{
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+
+.number{
+    font-size:28pt;
+    font-weight: bold;
+    border:2pt solid #0077FF;
+    border-radius: 100%;
+    padding: 40px;
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#0077FF;
+}
+/**/
+
+
+/*FORM*/
+.forms{
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+    background-color: #0077FF;
+    padding: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    border-radius: 10px;
+    color:white;
+}
+
+.form{
+    display:flex;
+    justify-content: space-between;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+
+}
+
+.img-icon{
+    margin-top: -30px;
+}
+
+.img-icon:hover{
+    transform: translate3d(20px,-20px,20px);
+    transition: 1.5s;
+}
+
+input[type=text], input[type=tel], input[type=email]{
+    background-color: white;
+    padding: 15px;
+    color: #0077FF;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width:250px;
+}
+
+input[type=submit]{
+    background-color:black;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+/**/
+
+/*FOOTER*/
+footer{
+    padding: 10%;
+    background-color: black;
+    color:white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #0077FF;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.social-links a img{
+    margin: 10px;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/**/
+
+
+/*Всплывающая форма*/
+button{
+    background-color: transparent;
+    outline: none;
+    border:2px solid #0077FF;
+    font-size: 12pt;
+    padding:15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #0077FF;
+    color: white;
+    transition: 0.5s;
+    transform: 3;
+}
+
+#blablabla {
+    display: none;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+  }
+  
+  #blablabla.open {
+    display: block;
+  }
+
+  .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    display: none;
+    z-index: 1050;
+  }
+
+  
+  .popup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup_open {
+    display: block;
+  }
+  
+  .popup__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0077FF;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 100%;
+  }
+  
+  .popup__wrapper {
+    padding: 40px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+/**/
+
+/*COURSES IN INDEX_2*/
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    height: auto;
+    border:3px solid #0077FF;
+    padding:20px;
+    gap: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course h2{
+    font-size: 15pt;
+}
+
+.course ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.course li {
+    list-style-type: decimal-leading-zero;
+}
+
+.course li::marker{
+    color: #0077FF;
+    font-size: bold;
+}
+
+.course:hover{
+    background-color: #0077FF;
+    color: #ffffff;
+    transition: 1s;
+    transform: 4;
+}
+
+.course:hover li::marker{
+    color:#ffffff
+}
+
+.course:hover button{
+    background-color: black;
+    color: #ffffff;
+}
+
+.course:hover button:hover{
+    background-color: #ffffff;
+    color: black;
+    transition: 0.7s;
+    transform: 3;
+}
+.p_s{
+    color: #0077FF;
+    padding-top: 3%;
+    text-align: center;
+}
+
+/*Модальное окно*/
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto;
+  }
+}
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #0077FF;
+    color: #0077FF;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+    color: #000;
+}
+
+
+.header-2{ /*header in index_2*/
+    margin-bottom: none;
+}
+/**/
+
+
+/*CONTACTS in INDEX_4*/
+.contacts{
+    display: flex;
+    gap: 100px;
+    margin-top: 0;
+}
+
+.contacts h2{
+    color: #0077FF;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact button{
+    background-color: transparent;
+    outline: none;
+    border:2px solid #0077FF;
+    font-size: 18pt;
+    padding:15px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.contact button:hover{
+    background-color: #0077FF;
+    color: white;
+    transition: 0.5s;
+    transform: 3;
+}
+
+.soc-l{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+   
+}
+.soc-l :hover{
+    transform: scale(1.1);
+     transition: 1s;
+}
+
+.programms{
+    margin:0;
+    margin-bottom:10%;
+}
+
+header{
+    margin-bottom:8%;
+}
+/**/
+
+/*Prices in index_3*/
+.prices{
+    display:flex;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    padding: 15%;
+    padding-top:5%;
+    padding-bottom:5%;
+    align-items: center;
+    gap:30px;
+    border-radius: 15px;
+}
+.price{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width:30%;
+    height: 280px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+/*Форма in index_4*/
+.forma{
+    background-color: #e6e6e6;
+    padding: 10%;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+textarea{
+    outline: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border:none;
+    font-weight: bolder;
+    border:2pt solid rgb(201, 201, 201);
+
+}
+.forma input{
+    border:2pt solid rgb(201, 201, 201);
+}
+
+.forma input::placeholder{
+    color:black;
+    font-weight: bolder;
+}
+
+.text-form h2{
+    font-size:3vw;
+}
+
+.text-form p{
+    font-size:20pt;
+
+}
+
+.text-form{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+
+.offers{
+    display:flex;
+    flex-direction: column;
+    gap:70px;
+    align-items: center;
+}
+
+.offers h1{
+    font-size: 24pt;
+}
+/**/
+
+
+
+
+/*carousel in index_3*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:#000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/**/
+
+
+@media screen and (max-width: 750px) {
+    .uk-img{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        width:100%;
+    }
+    .prices{
+        flex-direction: column;
+    }
+    .price{
+        width:100%;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .advantages{
+        flex-direction: column;
+        gap:15px;
+    }
+    .advantage{
+        width:90%;
+        padding: 20px;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .forms{
+        align-items: center;
+        justify-content: center;
+        padding: 15%;
+    }
+    .forma{
+        flex-direction: column;
+    }
+    .contacts{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contact{
+        width:100%;
+        gap:50px;
+    }
+    .text-form h2{
+        font-size: 18pt;
+    }
+    .text-form p{
+        font-size: 12pt;
+        padding-bottom: 15px;
+    }
+    .text-form{
+        gap:30px;
+    }
+
+    .map{
+        width:100%;
+        height: 300px;
+    }
+    .soc-l img{
+        height: 45px;
+    }
+    .img-2{
+        height: 50px;
+    }
+    .img-3{
+        height: 55px;
+    }
+    .img-4{
+        height: 60px;
+    }
+    .soc-l{
+        gap:35px;
+    }
+    .number{
+        padding: 30px;
+        font-size: 20pt;
+    }
+}
+
+
+
+.header__burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.header__burger-btn span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 5px;
+    background-color: black;
+    transition: background-color .3s, opacity .3s, transform .5s;
+    will-change: transform;
+}
+
+.header__burger-btn:hover span {
+    background-color: rgb(103, 103, 103);
+}
+
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(2) {}
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+
+/* Крестик */
+
+.header.open .header__burger-btn span {
+    background-color: white;
+}
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu__link {
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .form-popup{
+        display: none;
+    }
+    .topmenu{
+        flex-direction: column;
+    }
+    .header__burger-btn {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        right: -350px;
+        top: 0;
+        width: 350px;
+        padding: 75px 20px 20px 20px;
+        background-color: #0077FF;
+        border-radius: 10px;
+        visibility: hidden;
+        transition: transform .5s, visibility .5s;
+        will-change: transform;
+        z-index: 1050;
+    }
+    .menu__list {
+        display: block;
+    }
+    .menu__item:not(:last-child) {
+        margin-right: 0;
+    }
+    .menu__item a{
+        color: white;
+        font-size: 21px;
+        display: block;
+        padding: 10px;
+    }
+    .submenu a{
+        color:black;
+    }
+    .header.open .menu {
+        transform: translateX(-100%);
+        visibility: visible;
+    }
+}
+
+
+
+
+
+
+
+
